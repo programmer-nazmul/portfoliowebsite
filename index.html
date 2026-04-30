@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazmul Hossain | Creative Graphic Designer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Iconify Icon CDN -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #12001a;
+            color: white;
+            margin: 0;
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="selection:bg-[#d16aff]/30 selection:text-white">
+
+    <!-- Ambient Background Glow -->
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-full pointer-events-none overflow-hidden z-0">
+        <div class="absolute top-[-20%] left-1/2 -translate-x-1/2 w-3/4 aspect-square bg-[#660094] opacity-20 blur-[120px] rounded-full animate-pulse" style="animation-duration: 4s;"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-1/2 aspect-square bg-[#310047] opacity-40 blur-[100px] rounded-full animate-pulse" style="animation-duration: 6s;"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-[#12001a]/80 backdrop-blur-md border-b border-[#310047]">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-semibold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white to-[#d16aff]">
+             <img src="/Logo/Logo.png" alt="Logo" style="height: 40px; width: auto;">
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-400">
+                <a href="#" class="hover:text-[#d16aff] transition-colors">Home</a>
+                <a href="#about" class="hover:text-[#d16aff] transition-colors">About</a>
+                <a href="#services" class="hover:text-[#d16aff] transition-colors">Services</a>
+                <a href="#work" class="hover:text-[#d16aff] transition-colors">Portfolio</a>
+                <a href="#contact" class="hover:text-[#d16aff] transition-colors">Contact</a>
+            </div>
+            <a href="#contact" class="hidden md:inline-flex items-center justify-center px-4 py-2 text-xs font-medium rounded-full bg-[#310047] text-white border border-[#660094] hover:bg-[#660094] transition-all duration-300">
+                Hire Me
+            </a>
+            <button class="md:hidden text-gray-300 hover:text-white">
+                <iconify-icon icon="solar:hamburger-menu-linear" style="font-size: 1.5rem;"></iconify-icon>
+            </button>
+        </div>
+    </nav>
+
+    <main class="relative z-10 pt-24">
+        <!-- Hero Section -->
+        <section class="max-w-6xl mx-auto px-6 pt-20 pb-32 flex flex-col items-center text-center">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#310047]/50 border border-[#660094]/50 mb-8 backdrop-blur-sm group hover:bg-[#310047] transition-colors cursor-default">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#d16aff] opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-[#d16aff]"></span>
+                </span>
+                <span class="text-xs font-medium text-[#d16aff]">Available for new projects</span>
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-white mb-6 max-w-4xl leading-tight">
+                Nazmul Hossain <br />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#9614d0] to-[#d16aff]">Creative Graphic Designer</span>
+            </h1>
+            
+            <p class="text-base md:text-lg text-gray-400 max-w-2xl mb-10 font-normal leading-relaxed">
+                I specialize in minimalist, high-end visual design. Blending precision with creativity to build modern brand identities that leave a lasting mark.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-gradient-to-r from-[#660094] to-[#9614d0] text-white text-sm font-medium hover:from-[#9614d0] hover:to-[#bb44f0] transition-all shadow-[0_0_20px_rgba(150,20,208,0.3)] hover:shadow-[0_0_30px_rgba(209,106,255,0.4)] flex items-center justify-center gap-2 group">
+                    Hire Me
+                    <iconify-icon icon="solar:arrow-right-linear" class="group-hover:translate-x-1 transition-transform" style="font-size: 1.2rem;"></iconify-icon>
+                </a>
+                <a href="#work" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-[#1a0026]/50 backdrop-blur-sm border border-[#660094] text-white text-sm font-medium hover:bg-[#310047] transition-all flex items-center justify-center gap-2">
+                    View Portfolio
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-24 max-w-6xl mx-auto px-6 border-t border-[#310047]">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-5 relative group">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-[#9614d0] to-[#d16aff] rounded-3xl blur-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
+                    <div class="relative aspect-square rounded-3xl overflow-hidden bg-[#1a0026] border border-[#310047] p-2">
+                        <div class="w-full h-full rounded-2xl bg-gradient-to-b from-[#310047]/50 to-[#12001a] flex items-center justify-center relative overflow-hidden">
+                            <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-10 mix-blend-overlay"></div>
+                           <img src="/Image/Nazmul.png" alt="Nazmul" class="w-full h-full object-cover object-top">
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-7">
+                    <h2 class="text-2xl md:text-3xl font-semibold tracking-tight text-white mb-6">About Me</h2>
+                    <div class="space-y-4 text-sm md:text-base text-gray-400 leading-relaxed font-normal">
+                        <p>Hello! I'm Nazmul, a passionate and creative Graphic Designer with a keen eye for aesthetics and detail. I specialize in building strong visual identities that resonate with audiences and elevate brands to a premium standard.</p>
+                        <p>With a background blending traditional design principles and modern digital trends, I craft high-end designs tailored to each client's unique vision. From sleek typography to engaging social media assets, my goal is always to deliver premium, functional, and striking visuals.</p>
+                    </div><br>
+                    <!-- CV Button Added Here -->
+    <div class="mb-8">
+        <a href="/PDF/Nazmul_Hossain_01617071025_Graphic_Design_Resume V2.pdf" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#310047] text-white text-sm font-medium border border-[#660094] hover:bg-[#660094] transition-all group">
+            <iconify-icon icon="solar:document-text-linear" style="font-size: 1.2rem;"></iconify-icon>
+            View Curriculum Vitae
+            <iconify-icon icon="solar:arrow-right-up-linear" class="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" style="font-size: 1rem;"></iconify-icon>
+        </a>
+    </div>
+ <!-- Social Icons -->
+<div class="mt-8 flex gap-4">
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/nazmulh13" target="_blank" class="w-10 h-10 rounded-full bg-[#1a0026] border border-[#310047] flex items-center justify-center text-gray-400 hover:text-[#d16aff] hover:border-[#9614d0] transition-colors">
+        <iconify-icon icon="line-md:facebook"></iconify-icon>
+    </a>
+    
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/nazmulh13/" target="_blank" class="w-10 h-10 rounded-full bg-[#1a0026] border border-[#310047] flex items-center justify-center text-gray-400 hover:text-[#d16aff] hover:border-[#9614d0] transition-colors">
+        <iconify-icon icon="line-md:linkedin"></iconify-icon>
+    </a>
+    
+    <!-- Behance -->
+    <a href="#" target="_blank" class="w-10 h-10 rounded-full bg-[#1a0026] border border-[#310047] flex items-center justify-center text-gray-400 hover:text-[#d16aff] hover:border-[#9614d0] transition-colors">
+        <iconify-icon icon="ant-design:behance-outlined"></iconify-icon>
+    </a>
+</div>
+</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-24 bg-[#12001a] relative border-y border-[#310047]">
+            <div class="absolute inset-0 bg-gradient-to-b from-[#310047]/10 to-transparent pointer-events-none"></div>
+            <div class="max-w-6xl mx-auto px-6 relative z-10">
+                <div class="mb-16">
+                    <h2 class="text-2xl md:text-3xl font-semibold tracking-tight text-white mb-4">My Services</h2>
+                    <p class="text-sm text-gray-400 max-w-xl">Comprehensive design solutions crafted to give your brand a distinct and modern edge.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Service 1 -->
+                    <div class="group bg-[#1a0026]/80 backdrop-blur-sm border border-[#310047] hover:border-[#9614d0] rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-[#310047] flex items-center justify-center mb-6 text-[#d16aff] group-hover:scale-110 transition-transform">
+                            <iconify-icon icon="solar:star-rings-linear" style="font-size: 1.5rem;"></iconify-icon>
+                        </div>
+                        <h3 class="text-base font-medium text-white mb-3 tracking-tight">Logo Design</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed">Minimal, memorable, and timeless marks that form the foundation of your visual identity.</p>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="group bg-[#1a0026]/80 backdrop-blur-sm border border-[#310047] hover:border-[#9614d0] rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-[#310047] flex items-center justify-center mb-6 text-[#d16aff] group-hover:scale-110 transition-transform">
+                            <iconify-icon icon="solar:box-minimalistic-linear" style="font-size: 1.5rem;"></iconify-icon>
+                        </div>
+                        <h3 class="text-base font-medium text-white mb-3 tracking-tight">Branding</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed">Cohesive guidelines, color palettes, and typography to unify your corporate presence.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="group bg-[#1a0026]/80 backdrop-blur-sm border border-[#310047] hover:border-[#9614d0] rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-[#310047] flex items-center justify-center mb-6 text-[#d16aff] group-hover:scale-110 transition-transform">
+                            <iconify-icon icon="solar:hashtag-square-linear" style="font-size: 1.5rem;"></iconify-icon>
+                        </div>
+                        <h3 class="text-base font-medium text-white mb-3 tracking-tight">Social Media</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed">Engaging visual assets designed to capture attention and elevate your online engagement.</p>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="group bg-[#1a0026]/80 backdrop-blur-sm border border-[#310047] hover:border-[#9614d0] rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-[#310047] flex items-center justify-center mb-6 text-[#d16aff] group-hover:scale-110 transition-transform">
+                            <iconify-icon icon="solar:t-shirt-linear" style="font-size: 1.5rem;"></iconify-icon>
+                        </div>
+                        <h3 class="text-base font-medium text-white mb-3 tracking-tight">T-shirt Design</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed">Creative, premium apparel graphics crafted for modern streetwear and corporate merch.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Showcase -->
+        <section id="work" class="py-24 max-w-6xl mx-auto px-6">
+            <div class="flex items-end justify-between mb-12">
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-semibold tracking-tight text-white mb-4">Selected Work</h2>
+                    <p class="text-sm text-gray-400">A showcase of recent premium design projects.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <a href="#" class="group block">
+                    <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-[#1a0026] border border-[#310047] group-hover:border-[#9614d0] transition-all duration-500 mb-4 flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-br from-[#310047]/50 to-[#12001a] opacity-50 group-hover:opacity-100 transition-opacity"></div>
+                        <iconify-icon icon="solar:pallete-2-linear" class="text-[#660094] group-hover:text-[#d16aff] group-hover:scale-125 transition-all duration-500 z-10" style="font-size: 4rem;"></iconify-icon>
+                    </div>
+                    <div class="flex justify-between items-center px-2">
+                        <div>
+                            <h3 class="text-base font-medium text-white tracking-tight">TechNova Rebrand</h3>
+                            <p class="text-xs text-gray-400 mt-1">Brand Identity</p>
+                        </div>
+                        <div class="w-8 h-8 rounded-full bg-[#310047] flex items-center justify-center text-white opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all">
+                            <iconify-icon icon="solar:arrow-right-up-linear" style="font-size: 1.2rem;"></iconify-icon>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="#" class="group block md:mt-12">
+                    <div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-[#1a0026] border border-[#310047] group-hover:border-[#9614d0] transition-all duration-500 mb-4 flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-[#310047]/50 to-[#12001a] opacity-50 group-hover:opacity-100 transition-opacity"></div>
+                        <iconify-icon icon="solar:layers-minimalistic-linear" class="text-[#660094] group-hover:text-[#d16aff] group-hover:scale-125 transition-all duration-500 z-10" style="font-size: 4rem;"></iconify-icon>
+                    </div>
+                    <div class="flex justify-between items-center px-2">
+                        <div>
+                            <h3 class="text-base font-medium text-white tracking-tight">Aura Marketing</h3>
+                            <p class="text-xs text-gray-400 mt-1">Visual & Social Design</p>
+                        </div>
+                        <div class="w-8 h-8 rounded-full bg-[#310047] flex items-center justify-center text-white opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all">
+                            <iconify-icon icon="solar:arrow-right-up-linear" style="font-size: 1.2rem;"></iconify-icon>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="py-24 bg-[#12001a] relative border-t border-[#310047] overflow-hidden">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="mb-12">
+                    <h2 class="text-2xl md:text-3xl font-semibold tracking-tight text-white mb-4">Client Testimonials</h2>
+                    <p class="text-sm text-gray-400">What people are saying about my design work.</p>
+                </div>
+                
+                <div class="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory hide-scrollbar">
+                    <div class="snap-start shrink-0 w-80 md:w-96 bg-[#1a0026]/80 backdrop-blur-md border border-[#310047] rounded-2xl p-8 relative hover:border-[#660094] transition-colors">
+                        <iconify-icon icon="solar:chat-round-line-linear" class="absolute top-8 right-8 text-[#310047]" style="font-size: 2rem;"></iconify-icon>
+                        <p class="text-sm text-gray-300 mb-8 relative z-10 leading-relaxed">"Nazmul completely transformed our brand. The attention to detail and modern approach resulted in an identity we are incredibly proud of. A true professional."</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#660094] to-[#310047] flex items-center justify-center text-xs font-semibold text-white">S</div>
+                            <div>
+                                <h4 class="text-sm font-medium text-white">Sarah Jenkins</h4>
+                                <p class="text-xs text-gray-500">CEO, TechNova</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="snap-start shrink-0 w-80 md:w-96 bg-[#1a0026]/80 backdrop-blur-md border border-[#310047] rounded-2xl p-8 relative hover:border-[#660094] transition-colors">
+                        <iconify-icon icon="solar:chat-round-line-linear" class="absolute top-8 right-8 text-[#310047]" style="font-size: 2rem;"></iconify-icon>
+                        <p class="text-sm text-gray-300 mb-8 relative z-10 leading-relaxed">"The t-shirt designs exceeded all expectations. Minimal, premium, and exactly what our target audience wanted. Will definitely hire him again for future drops."</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#9614d0] to-[#660094] flex items-center justify-center text-xs font-semibold text-white">M</div>
+                            <div>
+                                <h4 class="text-sm font-medium text-white">Marcus Doe</h4>
+                                <p class="text-xs text-gray-500">Founder, Urban Threads</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#660094] to-transparent"></div>
+            <div class="max-w-6xl mx-auto px-6 relative z-10">
+                <div class="text-center mb-16">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-[#660094] to-[#9614d0] mx-auto flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(150,20,208,0.4)]">
+                        <iconify-icon icon="solar:letter-linear" class="text-white" style="font-size: 2rem;"></iconify-icon>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-white mb-4">Let's work together</h2>
+                    <p class="text-base text-gray-400 max-w-xl mx-auto">Ready to elevate your brand? Reach out through any of these platforms.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/0151836013" target="_blank" class="group bg-[#1a0026]/80 backdrop-blur-md border border-[#310047] hover:border-[#9614d0] rounded-3xl p-8 transition-all duration-500 hover:-translate-y-2 flex flex-col items-center text-center">
+                        <div class="w-16 h-16 rounded-2xl bg-[#310047]/50 border border-[#660094]/50 flex items-center justify-center mb-6 text-[#d16aff] group-hover:scale-110 transition-all">
+                            <iconify-icon icon="simple-icons:whatsapp" style="font-size: 2rem;"></iconify-icon>
+                        </div>
+                        <h3 class="text-xl font-medium text-white mb-2">WhatsApp</h3>
+                        <span class="mt-auto px-6 py-2.5 rounded-full bg-[#12001a] border border-[#310047] text-sm text-[#d16aff]">0151836013</span>
+                    </a>
+
+                    <!-- Email -->
+                    <a href="mailto:nazmul4@outlook.com" class="group bg-[#1a0026]/80 backdrop-blur-md border border-[#310047] hover:border-[#9614d0] rounded-3xl p-8 transition-all duration-500 hover:-translate-y-2 flex flex-col items-center text-center">
+                        <div class="w-16 h-16 rounded-2xl bg-[#310047]/50 border border-[#660094]/50 flex items-center justify-center mb-6 text-[#d16aff] group-hover:scale-110 transition-all">
+                            <iconify-icon icon="solar:letter-linear" style="font-size: 2rem;"></iconify-icon>
+                        </div>
+                        <h3 class="text-xl font-medium text-white mb-2">Email</h3>
+                        <span class="mt-auto px-6 py-2.5 rounded-full bg-[#12001a] border border-[#310047] text-sm text-[#d16aff]">nazmul4@outlook.com</span>
+                    </a>
+
+                    <!-- Messenger -->
+                    <a href="https://www.facebook.com/nazmulh13" target="_blank" class="group bg-[#1a0026]/80 backdrop-blur-md border border-[#310047] hover:border-[#9614d0] rounded-3xl p-8 transition-all duration-500 hover:-translate-y-2 flex flex-col items-center text-center">
+                        <div class="w-16 h-16 rounded-2xl bg-[#310047]/50 border border-[#660094]/50 flex items-center justify-center mb-6 text-[#d16aff] group-hover:scale-110 transition-all">
+                            <iconify-icon icon="simple-icons:messenger" style="font-size: 2rem;"></iconify-icon>
+                        </div>
+                        <h3 class="text-xl font-medium text-white mb-2">Messenger</h3>
+                        <span class="mt-auto px-6 py-2.5 rounded-full bg-[#12001a] border border-[#310047] text-sm text-[#d16aff]">@nazmulh13</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-[#310047] bg-[#12001a] py-8 relative z-10">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-xs text-gray-500">
+                © <span id="year"></span> Nazmul Hossain. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#" class="fixed bottom-24 right-6 z-40 w-12 h-12 rounded-full bg-[#1a0026]/80 backdrop-blur-md border border-[#310047] text-gray-400 hover:text-white flex items-center justify-center transition-all group">
+        <iconify-icon icon="solar:alt-arrow-up-linear" class="group-hover:-translate-y-1 transition-transform" style="font-size: 1.2rem;"></iconify-icon>
+    </a>
+
+    <!-- Floating WhatsApp Button -->
+<a href="https://wa.me/0151836013" target="_blank" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-gradient-to-tr from-[#660094] to-[#9614d0] text-white flex items-center justify-center transition-all shadow-lg hover:-translate-y-1 group">
+    <!-- এখানে এনিমেশন স্পিড এবং স্কেল নিয়ন্ত্রণ করা হয়েছে -->
+    <span class="absolute inset-0 rounded-full animate-ping bg-[#d16aff] opacity-30" style="animation-duration: 3s; transform: scale(1.2);"></span>
+    <iconify-icon icon="simple-icons:whatsapp" style="font-size: 1.8rem;" class="relative z-10"></iconify-icon>
+</a>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
