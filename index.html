@@ -334,5 +334,22 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+    <script>
+    const menuBtn = document.querySelector('button.md\\:hidden'); // আপনার হ্যামবার্গার বাটন
+    const mobileMenu = document.querySelector('.hidden.md\\:flex'); // আপনার মেনু কন্টেইনার
+
+    menuBtn.addEventListener('click', () => {
+        // মেনু শো বা হাইড করার লজিক
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('flex');
+        mobileMenu.classList.toggle('flex-col');
+        mobileMenu.classList.toggle('absolute');
+        mobileMenu.classList.toggle('top-16');
+        mobileMenu.classList.toggle('left-0');
+        mobileMenu.classList.toggle('w-full');
+        mobileMenu.classList.toggle('bg-[#12001a]');
+        mobileMenu.classList.toggle('p-6');
+    });
+</script>
 </body>
 </html>
