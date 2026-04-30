@@ -338,17 +338,27 @@
     const menuBtn = document.querySelector('button.md\\:hidden'); // আপনার হ্যামবার্গার বাটন
     const mobileMenu = document.querySelector('.hidden.md\\:flex'); // আপনার মেনু কন্টেইনার
 
-    menuBtn.addEventListener('click', () => {
-        // মেনু শো বা হাইড করার লজিক
+    <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // মেনু খোলা এবং বন্ধ করার ফাংশন
+    function toggleMenu() {
         mobileMenu.classList.toggle('hidden');
-        mobileMenu.classList.toggle('flex');
-        mobileMenu.classList.toggle('flex-col');
-        mobileMenu.classList.toggle('absolute');
-        mobileMenu.classList.toggle('top-16');
-        mobileMenu.classList.toggle('left-0');
-        mobileMenu.classList.toggle('w-full');
-        mobileMenu.classList.toggle('bg-[#12001a]');
-        mobileMenu.classList.toggle('p-6');
+        document.body.classList.toggle('overflow-hidden'); // মেনু খোলা অবস্থায় স্ক্রল বন্ধ রাখবে
+    }
+
+    menuBtn.addEventListener('click', toggleMenu);
+    closeBtn.addEventListener('click', toggleMenu);
+
+    // যেকোনো লিঙ্কে ক্লিক করলে মেনু বন্ধ হয়ে যাবে
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        });
     });
 </script>
 </body>
